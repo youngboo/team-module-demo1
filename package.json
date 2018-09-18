@@ -4,9 +4,7 @@
   "private": false,
   "description": "team module demo",
   "dependencies": {
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-scripts-ts": "2.17.0"
+   
   },
   "scripts": {
     "start": "react-scripts-ts start",
@@ -28,10 +26,14 @@
     "react-addons-test-utils": "^15.6.2",
     "source-map-loader": "^0.2.4",
     "standard-version": "^4.4.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-scripts-ts": "2.17.0",
+    "ts-loader": "^5.1.1"
   },
   "files": [
-    "dist",
-    "README.md"
+    "build",
+    "CHANGELOG.md"
   ]
 }
