@@ -1,11 +1,9 @@
 {
   "name": "team-module-demo1",
-  "version": "0.1.1-alpha.1",
+  "version": "0.1.1",
   "private": false,
   "description": "team module demo",
-  "dependencies": {
-   
-  },
+  "dependencies": {},
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
