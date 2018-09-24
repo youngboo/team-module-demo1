@@ -1,5 +1,8 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const path = require('path');
 module.exports = {
+    entry: "./src/index.tsx",
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
         extensions: [".ts", ".tsx", ".js", ".json"]
@@ -25,7 +28,21 @@ module.exports = {
                 }
               }
             ]
+          },
+          {
+            test: /\.css?$/,
+            use: [
+              {
+                loader: require.resolve('css-loader')
+              }
+            ]
           }
-        ]
-      }
+        ],
+        
+    },
+    plugins: [
+      new TsconfigPathsPlugin({
+        configFile: path.resolve(__dirname,'tsconfig.json')
+      })
+    ]
 };

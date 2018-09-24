@@ -1,8 +1,8 @@
 import * as React from 'react';
-import './App.css';
-import { Hello, UserInfo } from './components';
+// import './App.css';
+import { Hello, UserInfo  } from '..';
 
-class App extends React.Component {
+class Main extends React.Component {
   public render() {
     return (
       <div className="App">
@@ -18,4 +18,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Main;
