@@ -1,5 +1,5 @@
 import * as React from "react";
-import './style/index.css'
+// import './style/index.css'
 
 // 'HelloProps' describes the shape of props.
 // State is never set so we use the '{}' type.
